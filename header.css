@@ -2,61 +2,107 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto" , sans-serif;
 }
 
 :root {
     font-family: sans-serif;
     box-sizing: border-box;
-
+    --primary-color: rgb(38, 183, 88);
+    --secondary-color: rgb(82, 156, 241);
+    --white-color: white;
+    --black-color: black;
 }
 
 .header {
-    background-color: black;
-    width: 100vw;
-    height: 15vh;
+    background-color: var(--black-color);
+    width: 100%;
+    height: 15%;
+    /* display: flex;
+    justify-content: center; */
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
 }
 
 .menu-header{
     display: flex;
-    color: white;
+    flex-direction: row;
+    color: var(--white-color);
     list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: white;
-    margin-left: 3vw;
+    display: none;
+    
 }
 
 .contenedor-header {
     display: flex;
+    align-items: center;
+    gap: 80%;
 }
+
+a {
+    text-decoration: none;
+    color: var(--white-color);
+    margin-left: 3vw;
+}
+
 
 .logo-header {
     height: 3rem;
     margin: 10px;
+    
 }
 
 .menu-burger {
-    height: 5vh;
-    ;
+    height: 50px;
+    
 }
 
 .hero {
     height: 70vh;
-    width: 100vw;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(./images/premium_dancer.png);
-    background-repeat: no-repeat;
-    background-color: rgb(82, 156, 241);
-    color: white;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    padding: 30% 5% 10% 5%;
+    
 }
 
+    .hero-tittle {
+        font-size: 3rem;
+        font-weight: bold;
+        line-height: 1.25;
+    }
+
+    .hero-message {
+        font-size: 1.25rem;
+        font-weight: bold;
+        line-height: 2;
+    }
+
+    .hero-conditions {
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+
 .hero-button {
-    height: 10%;
-    width: 30%;
+    height: 15%;
+    width: 100%;
     border-radius: 50px;
-    
-    background-color: rgb(38, 183, 88);
+    border: none;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+
 }
+/* 
+mediaqueries imagen hero 
+background-image: url(./images/premium_dancer.png);
+    background-repeat: no-repeat; */
