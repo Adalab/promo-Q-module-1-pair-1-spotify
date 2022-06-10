@@ -102,6 +102,50 @@ a {
     text-transform: uppercase;
 
 }
+
+.footer{
+    display:flex;
+    background-color: var(--black-color);
+    color:grey;
+    padding: 5%;
+    font-size: 10px;
+    height: 15vh;
+    
+
+}
+
+.items-footer{
+display:flex;
+flex-wrap:wrap;
+align-self: flex-end;
+}
+.cookies{
+    margin-left: 10px;
+}
+
+.informacion{
+    align-self:flex-end ;
+  
+    
+}
+.copyright{
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 10%;
+    flex-wrap: wrap;
+    align-self: flex-start;
+}
+
+.item-copyright{
+    align-self: flex-end;
+}
+.bandera{
+width: 20px;
+margin-left: 10%;
+margin-bottom: 10%;
+align-items: center;
+}
+
 /* 
 mediaqueries imagen hero 
 background-image: url(./images/premium_dancer.png);
